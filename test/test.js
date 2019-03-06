@@ -2,7 +2,7 @@ const extractDep = require('../dist')
 const fs = require('fs')
 const { src, dest } = require('gulp')
 
-describe('Extract dependencied', function() {
+describe('Extract dependencies', function() {
 	it('Extracted file should exist', done => {
 		let stream = extractDep({ prefix: './dependencies', depDir: 'test/dependencies', outDepDir: 'lib' })
 
