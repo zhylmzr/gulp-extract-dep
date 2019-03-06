@@ -19,14 +19,14 @@
   "author": "zhylmzr",
   "license": "MIT",
   "dependencies": {
-    "@babel/cli": "^7.2.3",
-    "gulp": "^4.0.0",
     "plugin-error": "^1.0.1",
     "vinyl": "^2.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-if": "^2.0.2",
