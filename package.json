@@ -1,0 +1,35 @@
+{
+  "name": "gulp-extract-dep",
+  "version": "1.0.0",
+  "description": "extract all dependencies in html",
+  "main": "dist/index.js",
+  "keywords": [
+    "gulpplugin",
+    "extract",
+    "html"
+  ],
+  "homepage": "https://github.com/zhylmzr/gulp-extract-dep",
+  "repository": "zhylmzr/gulp-extract-dep",
+  "scripts": {
+    "build": "babel index.js --out-dir dist --presets=@babel/preset-env",
+    "test": "mocha",
+    "demo": "gulp"
+  },
+  "author": "zhylmzr",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "gulp": "^4.0.0",
+    "plugin-error": "^1.0.1",
+    "vinyl": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-uglyfly": "^1.4.2",
+    "mocha": "^6.0.0"
+  }
+}
