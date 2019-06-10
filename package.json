@@ -12,7 +12,7 @@
   "repository": "zhylmzr/gulp-extract-dep",
   "bugs": "https://github.com/zhylmzr/gulp-extract-dep/issues",
   "scripts": {
-    "build": "babel index.js --out-dir dist --presets=@babel/preset-env",
+    "build": "babel index.js -o dist/index.min.js --presets=@babel/preset-env --minified --no-comments",
     "test": "mocha",
     "demo": "gulp"
   },
