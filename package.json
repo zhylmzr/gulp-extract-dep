@@ -12,7 +12,8 @@
   "repository": "zhylmzr/gulp-extract-dep",
   "bugs": "https://github.com/zhylmzr/gulp-extract-dep/issues",
   "scripts": {
-    "build": "babel index.js -o dist/index.min.js --presets=@babel/preset-env --minified --no-comments",
+    "build:dev": "babel index.js -o dist/index.js --presets=@babel/preset-env",
+    "build:prod": "babel index.js -o dist/index.min.js --presets=@babel/preset-env --minified --no-comments",
     "test": "mocha",
     "demo": "gulp"
   },
@@ -30,7 +31,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-if": "^2.0.2",
-    "gulp-uglyfly": "^1.4.2",
+    "gulp-uglify": "^3.0.2",
     "mocha": "^6.0.0"
   }
 }

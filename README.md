@@ -1,7 +1,7 @@
 # gulp-extract-dep
 > extract all dependencies in html
 
-[中文文档](./README.zh-CN.md)
+[Chinese Document](./README.zh-CN.md)
 
 ## When I need it?
 Sometime I have a task that write some simple page using JQuery or others tools but don't through node/npm.
@@ -17,7 +17,16 @@ yarn add gulp-extract-dep
 npm install gulp-extract-dep
 ```
 
+## Test
+```
+npm run test
+# or
+yarn test
+```
+
 ## Usage
+A little more complicated example is in `gulpfile.js`, and there are some other examples:
+
 ```javascript
 const extractDep = require('gulp-extract-dep')
 
@@ -31,7 +40,7 @@ gulp.task('extract', function() {
 ```javascript
 const extractDep = require('gulp-extract-dep')
 const gulpif = require('gulp-if')
-const uglyfly = require('gulp-uglyfly')
+const uglify = require('gulp-uglify')
 
 function isJS(file) {
   return file.extname === '.js'
@@ -40,7 +49,7 @@ function isJS(file) {
 gulp.task('extract', function() {
   gulp.src('*.html')
     .pipe(extractDep({ outDepDir: 'lib' }))
-    .pipe(gulpif(isJS, uglyfly()))
+    .pipe(gulpif(isJS, uglify()))
     .pipe(gulp.dest('dist'))
 })
 ```

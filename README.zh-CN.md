@@ -1,7 +1,7 @@
 # gulp-extract-dep
 > 提取html文件中的依赖文件
 
-[English](./README.md)
+[English Document](./README.md)
 
 ## 什么时候我需要它?
 有时候同事让我帮他写几个简单的页面, 仅仅使用JQuery等传统工具, 不要弄一堆的 node/npm 环境.
@@ -17,7 +17,16 @@ yarn add gulp-extract-dep
 npm install gulp-extract-dep
 ```
 
+## 测试
+```
+npm run test
+# 或者
+yarn test
+```
+
 ## 用法
+在 `gulpfile.js` 里有一个稍微复杂的例子, 下面是其他的例子:
+
 ```javascript
 const extractDep = require('gulp-extract-dep')
 
